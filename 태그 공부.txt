@@ -1,0 +1,70 @@
+"TAG" - 옷 태그라고 생각하면 됨.
+그 상품에 대한 설명
+
+진하게 글짜 바꾸기
+<strong> ... </strong>
+
+밑줄
+<u> ... </u>
+
+제목 (h1 ~ h6)
+<h1> .. </h1>
+
+150개 정도의 태그가 존재
+ - 빈도수가 많은 거부터 배우는게 좋음
+
+줄바뀜
+<br> 
+- 닫을 필요 없음
+
+단락 구분
+<p> ... </p>
+
+단락구분은 정보로써 가치가 더 큼. 
+정해진 여백만큼만 떨어지기 때문에 css를 이용
+-br가 더 자유도가 높다? 줄바꿈을 많이하고싶다면 계속 쓸수 있음.
+
+P태그 보안 + css
+</p style="margin-top:40px"> - 여백이 40px만큼 떨어짐
+
+
+
+이미지삽입
+<img src="주소" width="크기 (100%, 400)">
+
+부모자식
+<parent> 
+    <child> </child>
+</parent>
+
+ -목록 
+ <li>...</li> 자식
+<ul> .. <ul> 부모
+
+ 1. 
+ 2.
+ 3.
+
+<ul> 대신 <ol> ..</ol>를 쓰면 됨
+ - l : list
+ - o : Ordered
+ - U : Unordered
+tip > 
+1. 알트를 누르고 클릭클릭클릭하면 여러곳에 커서가 생김.
+2. tap을 누르면 드려쓰기가 됨.
+
+구조 <본문을 설명> 위에 내용들은 다 본문
+책표지 : <title>..</title>
+문자를 이걸로 열어라(글자가 깨질때 사용) : <meta charset="utf-8">
+본문 : <body> ... </body>
+바디태그를 설명하는 것은 : <head> .. </head> 으로 무조건 묶어야함.
+바디와 헤드를 묶는 태그 : <html> .. </html>
+그 위에 <!doctype html>을 써주면 좋음
+
+하이퍼링크: <a href="주소">...</a>
+새탭 : <a href="주소" target="_blank">...</a>
+하이퍼링크 설명 :<a href="주소" target="_blank" title="설명">...</a>
+
+동영상 첨부 : <iframe width="크기" height="크기" src="주소" fameborder="0" allowfullscreen></iframe> 
+
+댓글기능추가 : 

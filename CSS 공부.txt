@@ -1,0 +1,103 @@
+CSS코드
+
+CSS문법을 쓸때
+<style> .. </style>
+- 스타일태그에 안에 들어갈 코드는 CSS
+
+<style>
+
+ a {
+  color : red
+}
+</style>
+ 
+a는 a태그의 전체를 지목
+
+문법
+(속성을 이용하는 방법)
+<~tag~ style="color:red">
+
+text-decoration: none ; 텍스트 꾸밈 x
+text-decoration:underline 밑줄
+
+텍스트 크게 바꾸기 (검색 : CSS TEXT SIZE PROPERTY)
+text-size : ??px;
+센터정렬
+text-align:center;
+
+클래스속성 (그룹) <- html 태그
+- 클래스속성은 여러가지 속성이 들어올수있고, 띄워쓰기로 구분
+- 하나의 태그에는 여러가지 속성이 들어 갈 수 있고, 여러개의 선택자를 이용해서 하나의 태그를 공동으로 제어할 수 있다.
+
+class="xxx aaa" [2개의 속성]
+<style> .xxx </style>  = .은 class
+
+
+ex > <style> .xxx { color:red; }</style> <---선택자
+     <style> .aaa { color:gray;}</style>
+
+<h1 class="xxx aaa"> ~~~ </h1> 인 경우 맨 아래 aaa의 클래스가 발동하여 그레이가 출력
+
+이를 통해 우선순위가 높은 것을 사용할 때 
+
+ID를 사용 {aaa가 우선순위일 경우} 
+-우선순위 : ID > CLASS > 태그
+
+class에 있던것을 id="aaa"로 변경 후
+<style> #aaa {color=gray}</style> 로 변경
+
+id는 중독되선 안된다. 고유명사 느낌
+
+박스모델
+<h1> ... </h1>는 제목이기 때문에 화면 전체를 쓰는게 기본
+- block lever elemnet값이 기본
+- 이 기본 값을 바꾸기 위해선 display:inline으로 하면 바뀜.
+블럭 : 화면전체
+인라인 : 자기크기
+
+테두리 (border)
+border-width:xxpx;
+border-color:red;
+border-style:solid; (기본선)
+
+여백 
+padding:20px
+
+간격
+margin:0;
+
+그리드
+
+아무 용도가 없고, 디자인할떄 쓰는 태그
+<div>...</div> - 블럭
+<span>...</span>  - 인라인
+
+나란히 배치
+<style> 
+#grid {
+ display:grid;
+ grid-template-columns:1fr 1fr;
+}
+</style>
+
+1fr이란..? 화면 전체사용
+
+반응형 디자인 (화면크기에 따른 반응)
+개발자도구를 켜서 화면을 줄이면 크기가 나옴.
+
+가짜코드
+screen width > 800px (min-width:800px)
+scree width <800px (max-width:800px)
+ div {
+ display:none;
+}
+
+진짜코드
+@meida(min-width:800px) {
+ div{
+  ~~~
+}
+}
+
+css적용방법
+<link rel="stylesheet" href="/style.css">
