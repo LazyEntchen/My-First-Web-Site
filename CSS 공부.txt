@@ -40,9 +40,11 @@ ex > <style> .xxx { color:red; }</style> <---선택자
 
 이를 통해 우선순위가 높은 것을 사용할 때 
 
+선택자
 ID를 사용 {aaa가 우선순위일 경우} 
 -우선순위 : ID > CLASS > 태그
-
+- class : 포괄적
+-id : 타겟팅
 class에 있던것을 id="aaa"로 변경 후
 <style> #aaa {color=gray}</style> 로 변경
 
